@@ -1,0 +1,72 @@
+<meta charset = "UTF-8">
+
+<button id="gerarGols">Gerar gols</button>
+
+<script>
+
+function mostra(frase){
+
+	document.write(frase);
+}
+
+var time1 = prompt("Digite o nome do time1");
+
+mostra(time1);
+
+</script>
+
+
+
+<input id="placar1" type="text">
+
+
+<script>
+
+function geraGols1(){
+
+document.getElementById('gerarGols').addEventListener('click', function() {
+    var gols = Math.floor(Math.random() * 5); // gera um número de gols aleatório de 0 a 5
+    document.getElementById('placar1').value = gols;
+
+})
+
+
+}
+
+var geraGols1 = geraGols1();
+
+</script>
+
+X
+
+<input id="placar2" type="text">
+
+<script>
+
+function geraGols2(){
+
+document.getElementById('gerarGols').addEventListener('click', function() {
+    var gols = Math.floor(Math.random() * 5); // gera um número de gols aleatório de 0 a 5
+    document.getElementById('placar2').value = gols;
+
+})
+
+}
+
+var geraGols2 = geraGols2();
+
+</script>
+
+<script>
+
+function mostra(frase){
+
+	document.write(frase);
+}
+
+var time2 = prompt("Digite o nome do time2");
+
+mostra(time2);
+
+</script>
+
